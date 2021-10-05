@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ControlledInputs from "./ControlledInputs";
+import ShortCircuit from "./short-circuit";
+import SimpleForm from "./SimpleForm";
+import FormUseReducer from "./UseReducer/FormUseReducer";
+import RouteReact from "./RouteReact";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={
+        {
+          // backgroundImage:
+          //   'url("https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")',
+          // width: "100%",
+        }
+      }
+    >
+      <>
+        <RouteReact></RouteReact>
+        {/* <FormUseReducer></FormUseReducer> */}
+        {/* <ControlledInputs/> */}
+        {/* <ShortCircuit/> */}
+        {/* <SimpleForm/> */}
+      </>
     </div>
   );
 }
